@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>FCC Project 3</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy"
+				>You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.</p
+			>
+		<![endif]-->
+
+		<header id="header">
+			<img src="#top" alt="" id="header-img" />
+			<nav id="nav-bar">
+				<ul>
+					<li class="nav-logo"><a href="#top">Cush's Sauces</a></li>
+					<li>
+						<a href="#video" class="nav-link">Video</a>
+					</li>
+					<li>
+						<a href="#recipes" class="nav-link">Recipes</a>
+					</li>
+					<li>
+						<a href="#submit-form" class="nav-link">Sample</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="top">
+			<section class="hero-text" id="submit-form">
+				<h1>Because we all need a bit of flavor in life</h1>
+				<p>The perfect addition to any meal</p>
+			</section>
+
+			<section class="subscribe-form">
+				<fieldset>
+					<form action="https://www.freecodecamp.com/email-submit" id="form">
+						<label for="email">
+							Sign up for a free sample
+							<br />
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="design@email.com"
+								required
+							/>
+						</label>
+						<input
+							type="submit"
+							id="submit"
+							value="Subscribe"
+							onclick="alertFunction()"
+						/>
+					</form>
+				</fieldset>
+			</section>
+
+			<section class="video-element">
+				<video id="video" src="assets/Out-Camping.mp4" controls autoplay loop
+					>Cook Book
+				</video>
+			</section>
+
+			<section id="recipes" class="card-content ">
+				<div class="recipes-grid	">
+					<div class="recipes-text">
+						<h2>Our Favourite Recipes</h2>
+						<p>
+							One of our favourite things about chili sauce is that it can be
+							paired with absolutely everything. Add flavour to whatever your
+							own favourite meals are. Personally, we love hot sauce with
+							chicken wings — a definite crowd favourite!
+						</p>
+					</div>
+
+					<div class="food-image1 img-food">
+						<img
+							class=""
+							src="/assets/Fries.png"
+							alt="A bowl of tantalizingly cooked wedges"
+						/>
+						<div class="food-description">
+							<div class="description-layout">
+								<div>
+									<h3>Fries & Hot Sauce</h3>
+									<p>The perfect side for any meal</p>
+								</div>
+								<a onclick="alertFunction()" href="#footer">Recipe</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="food-image2 img-food">
+						<img
+							class=""
+							src="/assets/Wings.png"
+							alt="Chicken wings and hot sauce. Unbeatable"
+						/>
+						<div class="food-description">
+							<div class="description-layout">
+								<div>
+									<h3>Hot Wings. Nuff said.</h3>
+									<p
+										>Would it be hot sauce if it didn't go with chicken
+										wings?</p
+									>
+								</div>
+								<a onclick="alertFunction()" href="#footer">Recipe</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="food-image3 img-food">
+						<img
+							class=""
+							src="/assets/Bowl.png"
+							alt="Chilis, tomatos, garlic, onion and ginger. The ingredients of a darn good time"
+						/>
+						<div class="food-description">
+							<div class="description-layout">
+								<div>
+									<h3>Homemade Hotsauce. Unbeatable.</h3>
+									<p>Ready to make your own sauce? Let's get cooking.</p>
+								</div>
+								<a onclick="alertFunction()" href="#footer">Recipe</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<p>
+				This page was designed and built by
+				<a href="https://jasontcrabtree.com/">@jasontcrabtree</a> for the
+				FreeCodeCamp Responsive Web Design
+				<a
+					href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/"
+				>
+					Certificate.</a
+				>
+			</p>
+			<p>
+				Hosted on <a href="https://www.netlify.com/">Netlify</a>. See the code
+				on <a href="https://github.com/jasontcrabtree/">Github</a>
+			</p>
+		</footer>
+
+		<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+		<script src="script.js" async defer></script>
+	</body>
+</html>
